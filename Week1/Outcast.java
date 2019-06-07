@@ -36,7 +36,7 @@ public class Outcast {
 	public static void main(String[] args) { // see test client belows
 		WordNet wrd = new WordNet("synsets.txt", "hypernyms.txt");
 		Outcast outcast = new Outcast(wrd);
-		In in = new In("outcast3.txt");
+		In in = new In("outcast.txt");
 		String[] nouns = in.readAllStrings();
 		StdOut.println(outcast.outcast(nouns));
 	} 
